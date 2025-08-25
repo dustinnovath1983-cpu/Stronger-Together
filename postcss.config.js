@@ -4,3 +4,6 @@ export default {
     autoprefixer: {},
   },
 }
+git add package.json
+git commit -m "Add postinstall script for build"
+git push origin main
