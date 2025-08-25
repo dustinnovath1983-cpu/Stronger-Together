@@ -1,0 +1,3 @@
+git add package.json
+git commit -m "Add package.json with grunt and start script"
+git push origin main
