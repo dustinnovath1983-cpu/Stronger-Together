@@ -1,0 +1,20 @@
+{
+  "name": "stronger-together",
+  "version": "1.0.0",
+  "description": "Stronger Together helps build healthier, stable relationships — family, partnerships, business — through mindfulness, communication, and growth.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "grunt"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-cli": "^1.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "",
+  "license": "MIT"
+}
