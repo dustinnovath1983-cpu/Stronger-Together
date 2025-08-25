@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 20%, 98%);
+  --foreground: hsl(210, 25%, 7.8431%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 25%, 7.8431%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 25%, 7.8431%);
+  --primary: hsl(213, 78%, 57%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(159, 100%, 36%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(220, 14%, 42%);
+  --muted-foreground: hsl(210, 25%, 7.8431%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(210, 25%, 7.8431%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 17%, 87%);
+  --input: hsl(210, 17%, 97%);
+  --ring: hsl(213, 78%, 57%);
+  --chart-1: hsl(213, 78%, 57%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(43, 96%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(0, 0%, 100%);
+  --sidebar-foreground: hsl(210, 25%, 7.8431%);
+  --sidebar-primary: hsl(213, 78%, 57%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 17%, 93%);
+  --sidebar-accent-foreground: hsl(213, 78%, 57%);
+  --sidebar-border: hsl(210, 17%, 90%);
+  --sidebar-ring: hsl(213, 78%, 57%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(210, 20%, 4%);
+  --foreground: hsl(0, 0%, 91%);
+  --card: hsl(210, 20%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(210, 20%, 4%);
+  --popover-foreground: hsl(0, 0%, 91%);
+  --primary: hsl(213, 78%, 57%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(159, 100%, 36%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(220, 14%, 20%);
+  --muted-foreground: hsl(210, 3%, 46%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(210, 25%, 7.8431%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(210, 20%, 18%);
+  --ring: hsl(213, 78%, 57%);
+  --sidebar: hsl(210, 20%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(213, 78%, 57%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 5%, 8%);
+  --sidebar-accent-foreground: hsl(213, 78%, 57%);
+  --sidebar-border: hsl(210, 5%, 26%);
+  --sidebar-ring: hsl(213, 78%, 57%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(213, 78%, 57%, 0.05) 0%, hsl(159, 100%, 36%, 0.05) 100%);
+  }
+}
